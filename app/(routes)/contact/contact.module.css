@@ -1,0 +1,74 @@
+/* contact.module.css */
+
+.contactSection {
+    background-color: black;
+    padding: 2rem 0;
+    color: #d1fae5; /* emerald-300 */
+  }
+  
+  .title {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3.75rem;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: #d1fae5;
+    text-decoration: underline;
+    text-decoration-color: #065f46; /* emerald-700 */
+    transition: transform 0.3s;
+  }
+  
+  .title:hover {
+    animation: pulse 1s infinite;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contactBox {
+    height: 200px;
+    width: 100%;
+    max-width: 480px;
+    border: 1px solid #34d399; /* emerald-400 */
+    background-color: #059669; /* emerald-600 */
+    border-radius: 1.5rem;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .contactBox:hover {
+    background: linear-gradient(to bottom right, #2dd4bf, #4ade80); /* from-button1 to-button2 */
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+  }
+  
+  .button {
+    background-color: #292524; /* stone-950 */
+    border: 1px solid #a3a3a3; /* neutral-200 */
+    border-radius: 9999px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #d1fae5; /* text-text2 */
+    padding: 1rem 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-color: #065f46; /* emerald-700 */
+  }
+  
+  /* Pulse animation keyframes */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  

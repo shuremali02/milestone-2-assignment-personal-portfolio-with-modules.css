@@ -1,0 +1,82 @@
+/* cssmodule/hero.module.css */
+
+.heroContainer {
+    width: 100%;
+    color: #d1d5db; /* Equivalent to Tailwind's text-neutral-300 */
+  }
+  
+  .centeredButtonContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+  }
+  
+  .centeredButton {
+    background-color: #000000; /* Equivalent to Tailwind's bg-text */
+    border-top: 2px solid #cffafe; /* cyan-100 */
+    border-bottom: 2px solid #cffafe;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem; /* text-sm */
+    display: flex;
+    align-items: center;
+    color: #d1d5db;
+    gap: 0.5rem;
+  }
+  
+  .iconText {
+    color: #10b981; /* text-emerald-400 */
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937; /* bg-bg */
+    padding-top: 1.75rem;
+  }
+  
+  .roundedImage {
+    border-radius: 9999px;
+    width: auto;
+  }
+  
+  .mainText {
+    color: #10b981; /* text-emerald-300 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem; /* text-2xl */
+  }
+  
+  .subtitleText {
+    color: #a7f3d0; /* text-emerald-200 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 1.125rem; /* text-md */
+  }
+  
+  .emailButton {
+    background-color: #000000;
+    color: #10b981;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem; /* For responsive sizing, adjust in your media queries */
+    transition: color 0.2s;
+  }
+  
+  .emailButton:hover {
+    color: #d1d5db;
+  }
+  

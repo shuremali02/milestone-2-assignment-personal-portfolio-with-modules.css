@@ -1,0 +1,98 @@
+/* cssmodule/card.module.css */
+
+.cardContainer {
+    background-color: #065f46; /* Equivalent to bg-emerald-800 */
+    width: 100%;
+    height: 350px;
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 0.5rem;
+    transition: transform 0.3s ease; /* hover:scale-95 */
+  }
+  
+  .cardContainer.smHeight {
+    height: 400px;
+  }
+  
+  .cardContainer.mdHeight {
+    height: 450px;
+  }
+  
+  .cardContainer.lgHeight {
+    height: 500px;
+  }
+  
+  .dotsContainer {
+    display: flex;
+    padding-left: 0.5rem;
+  }
+  
+  .dotEmerald {
+    color: #a7f3d0; /* Equivalent to text-emerald-200 */
+  }
+  
+  .dotBg {
+    color: #1f2937; /* Equivalent to text-bg */
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: 65%;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .projectImage:hover {
+    transform: scale(0.95);
+  }
+  
+  .linkWrapper {
+    display: block;
+  }
+  
+  .detailsContainer {
+    padding-left: 1.25rem;
+    padding-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .projectTitle {
+    font-size: 1.5rem; /* text-2xl */
+    color: #d1d5db; /* text-text2 */
+    font-weight: bold;
+  }
+  
+  .projectDescription {
+    color: #d1d5db; /* text-text2 */
+    font-size: 0.875rem; /* text-sm */
+    line-clamp: 2; /* line-clamp-2 for small screens */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+  .projectDescription.smFont {
+    font-size: 1rem; /* text-base */
+    -webkit-line-clamp: 3;
+  }
+  
+  .projectDescription.lgFont {
+    font-size: 1.125rem; /* text-lg */
+    -webkit-line-clamp: 4;
+  }
+  
+  .arrowIconContainer {
+    padding-right: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrowIconContainer:hover {
+    transform: rotate(45deg);
+  }
+  
+  .arrowIcon {
+    color: #ffffff;
+  }
+  

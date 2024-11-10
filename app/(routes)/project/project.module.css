@@ -1,0 +1,43 @@
+/* Styling for the Projectcard component */
+.portfolioContainer {
+    background-color: black;
+    padding: 2rem 0;
+    color: #34d399; /* emerald-300 equivalent */
+  }
+  
+  .featuredTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-decoration: underline;
+    text-decoration-color: #065f46; /* emerald-700 equivalent */
+    transition: transform 0.3s;
+  }
+  
+  .featuredTitle:hover {
+    animation: pulse 1s infinite;
+  }
+  
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .projectsGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Keyframes for pulse animation */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  
