@@ -1,45 +1,45 @@
 "use client";
-import Link from 'next/link';
+import Link from "next/link";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import styles from "../css.modules/header.module.css"
+import styles from "../css.modules/header.module.css";
 
 export default function Navbar() {
-  const [Open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className={styles.header}>
-      
-      {/* Logo Section */}
       <Link href="/">
-        <div className={styles.logoContainer}>
-          <h1 className={styles.logoText}>SSA</h1>
+        <div className="flex items-center space-x-4 justify-between">
+          <h1 className={styles.logo}>SSA</h1>
         </div>
       </Link>
 
-      {/* Centered Navigation for larger screens */}
-      <nav className={`${styles.navCenter} md:flex`}>
+      {/* Hidden on mobile, shown on larger screens */}
+      <nav className={styles.navLinks}>
         <ul className={styles.navLinks}>
-          <li><Link href="/about" className={styles.navLink}>About</Link></li>
-          <li><Link href="/portfolio" className={styles.navLink}>Projects</Link></li>
-          <li><Link href="/contact" className={styles.navLink}>Contact Us</Link></li>
+          <Link href="/" className={styles.navItem}>Home</Link>
+          <Link href="/project" className={styles.navItem}>Projects</Link>
+          <Link href="/about" className={styles.navItem}>About</Link>
+          <Link href="/contact" className={styles.navItem}>Contact Me</Link>
         </ul>
       </nav>
 
-      {/* Mobile Menu Button aligned to the right */}
-      <div className={`${styles.mobileMenuButtonContainer} md:hidden`}>
-        <button className={styles.mobileMenuButton} onClick={() => setOpen(!Open)} aria-label="Toggle Menu">
-          {Open ? <FiX size={24} /> : <FiMenu size={24} />}
+      {/* Menu button for mobile view */}
+      <div className={styles.menuButton}>
+        <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+          {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Navigation */}
-      {Open && (
-        <nav className={styles.mobileNav}>
+      {/* Mobile Menu */}
+      {isOpen && (
+        <nav className={styles.mobileMenu}>
           <ul className={styles.mobileNavLinks}>
-            <li><Link href="/portfolio" className={styles.mobileNavLink}>Projects</Link></li>
-            <li><Link href="/about" className={styles.mobileNavLink}>About</Link></li>
-            <li><Link href="/contact" className={styles.mobileNavLink}>Contact Us</Link></li>
+            <Link href="/" className={styles.navItem}>Home</Link>
+            <Link href="/project" className={styles.navItem}>Projects</Link>
+            <Link href="/about" className={styles.navItem}>About</Link>
+            <Link href="/contact" className={styles.navItem}>Contact Me</Link>
           </ul>
         </nav>
       )}

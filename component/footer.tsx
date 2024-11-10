@@ -19,7 +19,7 @@ export default function Footer() {
                   📧 shuremsyed41@gmail.com
                 </button>
               </p>
-              <button className={styles.emailButtonSmall}>
+              <button className={`md:hidden ${styles.emailButtonSmall}`}>
                 Shuremsyed41@gmail.com
               </button>
             </div>

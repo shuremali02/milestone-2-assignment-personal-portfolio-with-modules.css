@@ -1,7 +1,7 @@
 import React from 'react';
 import { GoDotFill } from "react-icons/go";
 import Image from "next/image";
-import typewriter from "../css.modules/hom.module.css";
+
 import styles from "../css.modules/heroSec.module.css";
 
 export default function Hero() {
@@ -12,7 +12,7 @@ export default function Hero() {
           <p className={styles.iconText}>
             <GoDotFill />
           </p>
-          <p className={`${typewriter.typewriter}`}>It&#39;s me <b>Syed Shurem Ali🙎🏻‍♂️</b></p>
+          <p className={`${styles.typewriter}`}>It&#39;s me <b>Syed Shurem Ali🙎🏻‍♂️</b></p>
         </button>
       </div>
 
@@ -20,7 +20,7 @@ export default function Hero() {
         <Image
           src={"/dp.jpg"}
           width={70}
-          height={0}
+          height={70}
           alt="Profile"
           className={styles.roundedImage}
         />
@@ -44,7 +44,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="flex items-center justify-center pt-7">
+      <div className={styles.emailButton}>
         <button className={styles.emailButton}>
           📧 Shuremsyed41@gmail.com
         </button>

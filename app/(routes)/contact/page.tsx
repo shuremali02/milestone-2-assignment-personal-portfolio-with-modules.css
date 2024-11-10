@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../cssmodule/contact.module.css';
+import styles from "./contact.module.css";
 
 export default function Contact() {
   return (

@@ -65,7 +65,7 @@ export default function ProjectPage() {
       <h1 className={styles.featuredTitle}>Featured Projects</h1>
       <div className={styles.projectsGrid}>
         {projects.map((project, index) => (
-          <Card key={index} prop={project} />
+          <Card key={index} {...project} />
         ))}
       </div>
     </div>
