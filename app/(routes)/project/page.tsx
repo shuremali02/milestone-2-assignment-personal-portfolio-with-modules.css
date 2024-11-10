@@ -2,10 +2,10 @@
 import Card from '@/component/projectcard';
 import styles from './project.module.css';
 
-export default function Portfolio() {
-  const project = [
+export default function ProjectPage() {
+  const projects = [
     {
-      Image: "/travelBlog.jpg",
+      img: "/travelBlog.jpg",
       title: "Travelling-Website- ",
       description: "A modern travel blog built with Next.js, React, and Tailwind CSS, The site features responsive design, dynamic components, and smooth navigation for an engaging travel journey.",
       route: "https://travelblog-assignment.netlify.app/",
@@ -64,8 +64,8 @@ export default function Portfolio() {
     <div className={styles.portfolioContainer}>
       <h1 className={styles.featuredTitle}>Featured Projects</h1>
       <div className={styles.projectsGrid}>
-        {project.map((projects, index) => (
-          <Card key={index} prop={projects} />
+        {projects.map((project, index) => (
+          <Card key={index} prop={project} />
         ))}
       </div>
     </div>

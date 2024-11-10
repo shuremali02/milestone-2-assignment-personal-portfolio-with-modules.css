@@ -15,7 +15,7 @@ interface Props {
   route: string;
 }
 
-export default function Card({ prop }: { prop: Props }) {
+export default function Card(prop:Props) {
   useEffect(() => {
     AOS.init();
   }, []);
